@@ -85,7 +85,7 @@ export CPATH="$CONDA_PREFIX/include:$CONDA_PREFIX/targets/x86_64-linux/include:$
 export TORCH_CUDA_ARCH_LIST="12.0"
 export FORCE_CUDA=1
 
-# 4. Build and install in editable mode
+# 4. Build and install 
 pip install --no-build-isolation .
 ```
 
