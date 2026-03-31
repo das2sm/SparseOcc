@@ -43,4 +43,6 @@ RUN pip3 install tensorboard wandb pyturbojpeg==1.7.1 && \
 
 RUN pip3 install "numpy<1.24" numba==0.57.0 --force-reinstall
 
+ENV PYTHONPATH=/workspace/SparseOcc
+
 WORKDIR /workspace/SparseOcc
