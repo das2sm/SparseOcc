@@ -31,5 +31,6 @@ To ensure your **compiled kernels** and **project progress** persist, always run
         sparseocc-env /bin/bash -c "cd /workspace/SparseOcc && python3 -c 'import models; print(\"✅ Environment Ready\")' && /bin/bash"
     ```
 
+See CHECK_ENV.md for verifying image works.
 ---
 
