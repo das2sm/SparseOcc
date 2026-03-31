@@ -19,6 +19,15 @@ Your primary compute platform will be the **NVIDIA GeForce RTX 3090**.
 ---
 
 ## 📍 Month 1 (April): SparseDrive Setup & Baseline
+March 31st Baseline:
+
+    Model: SparseOcc (ResNet-50)
+
+    Hardware: NVIDIA RTX 3090 (24GB)
+
+    Inference Speed: 16.0 FPS / 62.5ms
+
+    Accuracy (mIoU): 0.368 (RayIoU)
 
 **Goal:** Establish a working perception + planning backbone.
 
