@@ -118,7 +118,6 @@ EOF
 * [ ] MMCV imports correctly
 * [ ] MMCV CUDA ops work
 * [ ] SparseOcc modules import
-* [ ] `train.py` runs
 
 ---
 
