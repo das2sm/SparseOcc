@@ -1,5 +1,5 @@
 #!/bin/bash
-# run.sh - Start the container and start research immediately
+# run.sh - Start the container 
 docker run --gpus all -it --shm-size=16g \
   -v $(pwd):/workspace/SparseOcc \
   -v /media/ace428/d0868705-3e72-4ad4-b84b-7e73f1dee3e5/nuscenes:/workspace/SparseOcc/data/nuscenes \

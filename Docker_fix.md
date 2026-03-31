@@ -25,21 +25,11 @@ To ensure your **compiled kernels** and **project progress** persist, always run
     ```bash
     # Replace the volume path if your code is not in the current directory
     # Replace nuscenes path with actual path
-    sudo docker run --gpus all -it --shm-size=16g \
+    docker run --gpus all -it --shm-size=16g \
         -v $(pwd):/workspace/SparseOcc \
         -v /media/ace428/d0868705-3e72-4ad4-b84b-7e73f1dee3e5/nuscenes:/workspace/SparseOcc/data/nuscenes \
-        sparseocc-env /bin/bash
+        sparseocc-env /bin/bash -c "cd /workspace/SparseOcc && python3 -c 'import models; print(\"✅ Environment Ready\")' && /bin/bash"
     ```
 
 ---
 
-## III. Post-Reboot "Sync" Steps (Inside the Container)
-
-1.  **Final Acid Test:**
-    Run this command to confirm everything is linked correctly.
-    ```bash
-    cd /workspace/SparseOcc
-    python3 -c "import torch; import models; print('\n3090 STATUS: READY\nENVIRONMENT: FULLY LOADED')"
-    ```
-
----
