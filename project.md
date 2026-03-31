@@ -27,7 +27,7 @@ March 31st Baseline:
 
     Inference Speed: 16.0 FPS / 62.5ms
 
-    Accuracy (mIoU): 0.368 (RayIoU)
+    Accuracy: 0.368 (RayIoU)
 
 **Goal:** Establish a working perception + planning backbone.
 
