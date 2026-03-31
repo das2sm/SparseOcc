@@ -71,44 +71,7 @@ These results are from our latest version, v1.1, which outperforms the results r
 
 ## Environment
 
-> The requirements are the same as those of [SparseBEV](https://github.com/MCG-NJU/SparseBEV).
-
-Install PyTorch 2.0 + CUDA 11.8:
-
-```
-conda create -n sparseocc python=3.8
-conda activate sparseocc
-conda install pytorch==2.0.0 torchvision==0.15.0 pytorch-cuda=11.8 -c pytorch -c nvidia
-```
-
-Install other dependencies:
-
-```
-pip install openmim
-mim install mmcv-full==1.6.0
-mim install mmdet==2.28.2
-mim install mmsegmentation==0.30.0
-mim install mmdet3d==1.0.0rc6
-pip install setuptools==59.5.0
-pip install numpy==1.23.5
-```
-
-Install turbojpeg and pillow-simd to speed up data loading (optional but important):
-
-```
-sudo apt-get update
-sudo apt-get install -y libturbojpeg
-pip install pyturbojpeg
-pip uninstall pillow
-pip install pillow-simd==9.0.0.post1
-```
-
-Compile CUDA extensions:
-
-```
-cd models/csrc
-python setup.py build_ext --inplace
-```
+Check Dockerfile, Docker_fix.md and CHECK_ENV.md
 
 ## Prepare Dataset
 
