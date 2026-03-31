@@ -1,5 +1,3 @@
----
-
 # 🎯 Project Overview: Closed-Loop Sparse Perception
 
 The objective of this project is to move beyond passive, open-loop perception and build a **closed-loop autonomous driving system**.
