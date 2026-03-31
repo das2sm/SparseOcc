@@ -129,7 +129,7 @@ Single-GPU evaluation:
 
 ```
 export CUDA_VISIBLE_DEVICES=0
-python val.py --config configs/sparseocc_r50_nuimg_704x256_8f.py --weights checkpoints/sparseocc_r50_nuimg_704x256_8f.pth
+python3 val.py --config configs/r50_nuimg_704x256_8f.py --weights checkpoints/sparseocc_r50_nuimg_704x256_8f.pth
 ```
 
 Multi-GPU evaluation:

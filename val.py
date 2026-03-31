@@ -13,6 +13,8 @@ from mmcv.runner import load_checkpoint
 from mmdet.apis import set_random_seed, multi_gpu_test, single_gpu_test
 from mmdet3d.datasets import build_dataset, build_dataloader
 from mmdet3d.models import build_model
+import torch.multiprocessing as mp
+mp.set_sharing_strategy('file_system')
 
 
 def evaluate(dataset, results):
